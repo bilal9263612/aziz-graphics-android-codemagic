@@ -26,13 +26,13 @@ workflows:
       # Clean the project
       - name: Clean build
         script: |
-          ./gradlew clean
+          gradle clean
           
       # Build the Release APK
       # The command 'assembleRelease' builds the APK.
       - name: Build Release APK
         script: | 
-          ./gradlew assemble$BUILD_TYPE
+          gradle assemble$BUILD_TYPE
           
     # Define which files to save as build artifacts
     artifacts:
