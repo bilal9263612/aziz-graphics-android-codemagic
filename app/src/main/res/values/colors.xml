@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary">#00BCD4</color>
+    <color name="primary_dark">#0097A7</color>
+    <color name="primary_light">#B2EBF2</color>
+    
+    <!-- Accent Colors -->
+    <color name="accent">#00BCD4</color>
+    
+    <!-- Dark Theme Background -->
+    <color name="background_primary">#121212</color>
+    <color name="background_secondary">#1E1E1E</color>
+    <color name="background_tertiary">#2C2C2C</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B3B3B3</color>
+    <color name="text_tertiary">#808080</color>
+    
+    <!-- Divider and Borders -->
+    <color name="divider">#2C2C2C</color>
+    <color name="border">#3A3A3A</color>
+    
+    <!-- Status Colors -->
+    <color name="success">#4CAF50</color>
+    <color name="error">#F44336</color>
+    <color name="warning">#FF9800</color>
+    <color name="info">#2196F3</color>
+    
+    <!-- Nano Particle Color -->
+    <color name="particle_green">#00FF41</color>
+    
+    <!-- Folder Icon Colors -->
+    <color name="folder_icon_1">#FF6B6B</color>
+    <color name="folder_icon_2">#4ECDC4</color>
+    <color name="folder_icon_3">#45B7D1</color>
+    <color name="folder_icon_4">#FFA07A</color>
+    <color name="folder_icon_5">#98D8C8</color>
+    <color name="folder_icon_6">#F7DC6F</color>
+    <color name="folder_icon_7">#BB8FCE</color>
+    <color name="folder_icon_8">#85C1E2</color>
+    
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aziz Graphics</string>
+    <string name="app_description">Embed and manage HTML files with a minimalist dark theme</string>
+    
+    <!-- Splash Screen -->
+    <string name="splash_title">Aziz Graphics</string>
+    <string name="splash_subtitle">Loading...</string>
+    
+    <!-- Main Activity -->
+    <string name="main_title">My Files</string>
+    <string name="no_files">No files yet. Add an HTML file to get started.</string>
+    <string name="add_file">Add File</string>
+    <string name="open_file">Open</string>
+    <string name="delete_file">Delete</string>
+    <string name="rename_file">Rename</string>
+    <string name="pin_file">Pin</string>
+    <string name="unpin_file">Unpin</string>
+    
+    <!-- Permissions -->
+    <string name="permission_request_title">Storage Permission Required</string>
+    <string name="permission_request_message">This app needs access to your storage to open and manage HTML files.</string>
+    <string name="permission_allow">Allow</string>
+    <string name="permission_deny">Deny</string>
+    
+    <!-- Dialogs -->
+    <string name="dialog_rename_title">Rename File</string>
+    <string name="dialog_rename_hint">Enter new name</string>
+    <string name="dialog_confirm">Confirm</string>
+    <string name="dialog_cancel">Cancel</string>
+    
+    <!-- Messages -->
+    <string name="file_deleted">File deleted successfully</string>
+    <string name="file_renamed">File renamed successfully</string>
+    <string name="error_opening_file">Error opening file</string>
+    <string name="error_deleting_file">Error deleting file</string>
+    
+</resources>

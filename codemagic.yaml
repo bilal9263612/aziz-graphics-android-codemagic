@@ -1,0 +1,51 @@
+# codemagic.yaml for Native Android APK build
+
+workflows:
+  android-apk-build:
+    name: Android APK Build
+    # Set the instance type. For Android builds, mac_mini_m2 is a good choice.
+    instance_type: mac_mini_m2
+    
+    # Environment variables for the build
+    environment:
+      # Set the project's root directory if it's not the repository root
+      # This is a standard Android project, so the project path is the root.
+      # ANDROID_PROJECT_PATH: "app" 
+      
+      # Set the build type (e.g., release, debug)
+      vars:
+        BUILD_TYPE: "Release"
+        
+    # Steps to execute during the build
+    scripts:
+      # Set Android SDK location for Gradle
+      - name: Set Android SDK location
+        script: | 
+          echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/local.properties"
+          
+      # Clean the project
+      - name: Clean build
+        script: |
+          ./gradlew clean
+          
+      # Build the Release APK
+      # The command 'assembleRelease' builds the APK.
+      - name: Build Release APK
+        script: | 
+          ./gradlew assemble$BUILD_TYPE
+          
+    # Define which files to save as build artifacts
+    artifacts:
+      # Path to the generated APK file
+      - app/build/outputs/apk/**/app-release.apk
+      # Include the logs for debugging
+      - $CM_BUILD_DIR/app/build/outputs/logs/**/*.log
+      
+    # Optional: Publishing section (removed for simplicity, as only APK build was requested)
+    # publishing:
+    #   email:
+    #     recipients:
+    #       - user@example.com
+    #     notify:
+    #       success: true
+    #       failure: false

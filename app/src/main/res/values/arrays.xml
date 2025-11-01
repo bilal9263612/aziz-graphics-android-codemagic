@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="folder_icon_colors">
+        <item>@color/folder_icon_1</item>
+        <item>@color/folder_icon_2</item>
+        <item>@color/folder_icon_3</item>
+        <item>@color/folder_icon_4</item>
+        <item>@color/folder_icon_5</item>
+        <item>@color/folder_icon_6</item>
+        <item>@color/folder_icon_7</item>
+        <item>@color/folder_icon_8</item>
+    </array>
+</resources>
